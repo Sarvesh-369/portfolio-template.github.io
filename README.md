@@ -30,16 +30,16 @@ Unlike traditional purely academic portals, this template is meticulously design
 
 ## Screenshots
 > ### Homepage
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Homepage.PNG" width="1000"> 
+> <img src="./assets/img/screenshots/Homepage.png" width="1000"> 
 
 > ### Projects
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/projects.PNG" width="1000"> 
+> <img src="./assets/img/screenshots/projects.png" width="1000"> 
 
 > ### Skills, Education
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Skills.PNG" width="380"><span style="margin-left:15px"><img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Education.PNG" width="380"> 
+> <img src="./assets/img/screenshots/Skills.png" width="380"><span style="margin-left:15px"><img src="./assets/img/screenshots/Education.png" width="380"> 
 
 > ### Blogposts, Publications
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Blogs.PNG" width="380"><span style="margin-left:15px"><img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Publications.PNG" width="380"> 
+> <img src="./assets/img/screenshots/Blogs.png" width="380"><span style="margin-left:15px"><img src="./assets/img/screenshots/Publications.png" width="380"> 
 
 ---
 
