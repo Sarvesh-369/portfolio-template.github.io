@@ -25,7 +25,7 @@ Unlike traditional purely academic portals, this template is meticulously design
 
 - **Projects**: Cohesive dual-section layout for Research Projects and Industry/Open-Source Projects.
 - **Publications**: Seamless publication tracking for academic citations and research papers.
-- **Blogs**: Space to write technical reviews and academic discussions.
+
 
 
 ## Screenshots
@@ -38,8 +38,8 @@ Unlike traditional purely academic portals, this template is meticulously design
 > ### Education
 > <img src="./assets/img/screenshots/Education.png" width="1000"> 
 
-> ### Blogposts, Publications
-> <img src="./assets/img/screenshots/Blogs.png" width="380"><span style="margin-left:15px"><img src="./assets/img/screenshots/Publications.png" width="380"> 
+> ### Publications
+> <img src="./assets/img/screenshots/Publications.png" width="1000"> 
 
 ---
 

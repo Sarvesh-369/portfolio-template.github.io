@@ -33,9 +33,7 @@ class Header extends HTMLElement {
             <li class="nav-item mr-2">
               <a class="nav-link" href="${pagesPath}publications.html">Publications</a>
             </li>
-            <li class="nav-item mr-2">
-              <a class="nav-link" href="${pagesPath}blogposts.html">Blogs</a>
-            </li>
+
           </ul>
         </div>
         </nav>
