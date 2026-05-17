@@ -1,19 +1,91 @@
-// Safely handle the welcome message template if it exists
-const template = document.getElementById('welcome-msg');
-if (template) {
-  document.body.appendChild(template.content);
+// Premium SPA Transition Engine for Zero-Flash, Buttery-Smooth Page Changes
+async function navigateToPage(url, pushState = true) {
+  const pageContainer = document.getElementById('page-container');
+  if (!pageContainer) {
+    window.location.href = url;
+    return;
+  }
+
+  // 1. Trigger exit animation
+  pageContainer.classList.add('fade-out');
+
+  try {
+    // 2. Fetch target page concurrently
+    const response = await fetch(url);
+    if (!response.ok) throw new Error('Failed to fetch page');
+    const htmlText = await response.text();
+
+    // Parse the new page
+    const parser = new DOMParser();
+    const newDoc = parser.parseFromString(htmlText, 'text/html');
+    const newContainer = newDoc.getElementById('page-container');
+
+    if (!newContainer) {
+      window.location.href = url;
+      return;
+    }
+
+    // Wait for the exit animation to finish (220ms)
+    await new Promise(resolve => setTimeout(resolve, 220));
+
+    // 3. Swap page content
+    pageContainer.innerHTML = newContainer.innerHTML;
+    document.title = newDoc.title;
+
+    if (pushState) {
+      window.history.pushState({ url }, '', url);
+    }
+
+    // 4. Extract and execute page-specific script files (excluding globally persistent ones)
+    const newScripts = newDoc.querySelectorAll('script');
+    newScripts.forEach(oldScript => {
+      const src = oldScript.getAttribute('src');
+      
+      // Skip persistent UI or libraries already active in memory
+      if (src && (
+        src.includes('header.js') || 
+        src.includes('footer.js') || 
+        src.includes('main.js') || 
+        src.includes('jquery') || 
+        src.includes('bootstrap') || 
+        src.includes('popper')
+      )) {
+        return;
+      }
+
+      const newScript = document.createElement('script');
+      Array.from(oldScript.attributes).forEach(attr => {
+        newScript.setAttribute(attr.name, attr.value);
+      });
+      newScript.textContent = oldScript.textContent;
+      document.body.appendChild(newScript);
+      newScript.remove(); // Clean up DOM immediately
+    });
+
+    // Scroll smoothly to top
+    window.scrollTo({ top: 0, behavior: 'instant' });
+
+    // 5. Trigger smooth entrance animation
+    pageContainer.classList.remove('fade-out');
+    pageContainer.style.animation = 'none';
+    pageContainer.offsetHeight; // Force reflow to restart CSS keyframe animation
+    pageContainer.style.animation = '';
+
+  } catch (err) {
+    console.warn('SPA transition failed, falling back to standard load:', err);
+    window.location.href = url;
+  }
 }
 
-// Premium SPA-like Page Exit Transition Handler
+// Global Event Interceptor for all internal page links
 document.addEventListener('click', (e) => {
-  // Find the closest anchor tag if clicked element is nested (like an icon or text inside a link)
   const link = e.target.closest('a');
   if (!link) return;
 
   const href = link.getAttribute('href');
   const target = link.getAttribute('target');
 
-  // Intercept only internal links, excluding hashes, mailto/tel protocols, and new tabs
+  // Intercept internal HTML page links only
   if (href && 
       !href.startsWith('#') && 
       !href.startsWith('mailto:') && 
@@ -22,14 +94,11 @@ document.addEventListener('click', (e) => {
       link.hostname === window.location.hostname) {
     
     e.preventDefault();
-    const destination = link.href;
-    
-    // Trigger smooth exit animation
-    document.body.classList.add('fade-out');
-    
-    // Wait for the exit animation to complete before navigating
-    setTimeout(() => {
-      window.location.href = destination;
-    }, 220); // Syncs with the 0.25s fade-out in main.css
+    navigateToPage(link.href);
   }
+});
+
+// Handle browser Back/Forward navigation
+window.addEventListener('popstate', (e) => {
+  navigateToPage(window.location.href, false);
 });
