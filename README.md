@@ -1,76 +1,54 @@
-# academic-portfolio-template-lemos
-This repository contains an elegant and responsive academic portfolio template built using HTML, CSS, JavaScript, and Bootstrap. Designed for students, researchers, and academics, this template allows you to showcase your educational background, research projects, publications, and professional accomplishments in a clean and modern layout.
+# Hybrid Academic & Industry Portfolio Template
 
-## Features
+This repository contains a premium, elegant, and highly structured **Hybrid Academic & Industry Portfolio Template** built using HTML, CSS, JavaScript, and Bootstrap. 
 
-- **Responsive Design**: Ensures optimal viewing experience across various devices including desktops, tablets, and smartphones.
-- **Bootstrap Framework**: Utilizes Bootstrap 4 for a robust, mobile-first layout and easy customization.
-- **Modern Aesthetic**: Clean and professional design to highlight your academic achievements.
-- **Interactive Elements**: JavaScript-powered features for enhanced user interaction.
-- **Ease of Customization**: Simple HTML and CSS structure for straightforward customization to fit your personal style and needs.
+Unlike traditional purely academic portals, this template is meticulously designed for researchers, students, and professionals applying for both **Research Assistant (RA)** positions and **Industry (Software Engineering, Machine Learning, Data Science)** jobs. It achieves a perfect balance of research accomplishments and engineering scalability.
+
+---
+
+## Key Hybrid Features
+
+- **Dual CV & Resume Setup**: High-level action buttons on the homepage for both an industry-focused **Resume** and an academic-focused **Curriculum Vitae (CV)**.
+- **Categorized Experience**: A single cohesive `Experience` page with sub-sections for **Professional & Research Experiences** and **Teaching & Mentorship**, ensuring academic and corporate roles do not clutter your menu.
+- **Split Project Layout**: The `Projects` page is cleanly organized into two distinct sections: **Research Projects** (focusing on methodology, literature, models) and **Industry Projects** (focusing on code execution, architecture, and impact).
+- **Modern Tech Skills & Research Competencies**: A redesigned `Skills` page grouping languages, deep learning frameworks, dev tools/infra (Docker, AWS, Git), and research/writing tools (LaTeX, Jupyter) side-by-side.
+- **Academic Publication Port**: An elegant publications tracker, crucial for RA roles and standard R&D research positions, with seamless formatting.
+- **Clean Profile Sidebar**: An ultra-clean left sidebar focusing on key high-signal links (Email, LinkedIn, GitHub, Scholar, ORCID, Twitter).
+
+---
 
 ## Sections Included
 
-- **Home**: A welcoming introduction with a brief overview and personal photo.
-- **Education**: A comprehensive list of your educational qualifications.
-- **Experience**: Detail your professional experience including jobs, internships, and volunteer work.
-- **Skills**: Showcase your technical and soft skills.
-- **Teaching**: Highlight your teaching experience and related activities.
-- **Projects**: Showcase your academic and personal projects.
-- **Publications**: Showcase your published papers, articles, and other scholarly work.
-- **Blogs**: Display your blog posts and articles.
+- **Home**: Welcome introduction, news feeds (highlighting research and industry highlights alike), and dual CV & Resume buttons.
+- **Education**: Detailed layout of academic qualifications, courses, and GPAs.
+- **Experience**: Detailed professional work history, academic/GRA/GTA roles, and teaching assistantships.
+- **Skills**: Balanced list of coding languages, ML frameworks, developer tools, and academic tools.
+- **Projects**: Cohesive dual-section layout for Research Projects and Industry/Open-Source Projects.
+- **Publications**: Seamless publication tracking for academic citations and research papers.
+- **Blogs**: Space to write technical reviews and academic discussions.
 
-## Screenshots
-> ### Homepage
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Homepage.PNG" width="1000"> 
-
-> ### Projects
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/projects.PNG" width="1000"> 
-
-> ### Teaching Experience
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Teaching.PNG" width="1000"> 
-
-> ### Skills, Education
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Skills.PNG" width="380"><span style="margin-left:15px"><img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Education.PNG" width="380"> 
-
-> ### Blogposts, Publications
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Blogs.PNG" width="380"><span style="margin-left:15px"><img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Publications.PNG" width="380"> 
-
+---
 
 ## Getting Started
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/rochanaro/academic-portfolio-template-lemos.git
+   git clone https://github.com/Sarvesh-369/portfolio-template.github.io.git
    ```
 
-1. **Navigate to the Project Directory**
+2. **Navigate to the Project Directory**
    ```bash
-   cd academic-portfolio-template-lemos
+   cd portfolio-template.github.io
    ```
 
-2. **Open `index.html` in Your Browser**
-   - Simply open the `index.html` file in your preferred web browser to see the template in action.
+3. **Open `index.html` in Your Browser**
+   - Simply open the `index.html` file in your preferred web browser to see your hybrid portfolio.
 
-
-## Customization
-To customize the template, edit the HTML (located in `pages`) and CSS (located in `assets`) files in the project directory. You can modify the structure, style, color theme, and content to fit your personal needs. The template is built with Bootstrap 4, so you can utilize Bootstrap's extensive class library for additional customization.
-
-
-### Read More...
-[Blog Post] https://ws-dl.blogspot.com/2024/06/2024-06-04-revamp-your-academic.html 
-
-
-## Updates / Changelog
-
-| Date       | Update/Feature Added                                |
-|------------|-----------------------------------------------------|
-| 2025-09-16 | BibTex button for publications with `copy` option            |
-| 2024-07-19 | Initial release of the template                      |
-
-<br>
-<br>
 ---
 
-<b>Rochana R. Obadage</b> <br>
-<i>16th September 2025</i>
+## Customization
+
+To customize the portfolio, edit the HTML files in the `pages` directory and the CSS files in `assets/css`. 
+
+- Place your actual Resume PDF in `assets/resume.pdf` and your CV PDF in `assets/cv.pdf` to activate the download buttons.
+- Modify paths, social handles, and academic links directly in the HTML template structures.
