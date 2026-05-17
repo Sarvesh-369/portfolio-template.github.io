@@ -28,13 +28,14 @@ async function navigateToPage(url, pushState = true) {
     // Wait for the exit animation to finish (220ms)
     await new Promise(resolve => setTimeout(resolve, 220));
 
-    // 3. Swap page content
-    pageContainer.innerHTML = newContainer.innerHTML;
-    document.title = newDoc.title;
-
+    // 3. Update history state first (so custom elements evaluate the new URL pathname correctly)
     if (pushState) {
       window.history.pushState({ url }, '', url);
     }
+
+    // 4. Swap page content
+    pageContainer.innerHTML = newContainer.innerHTML;
+    document.title = newDoc.title;
 
     // 4. Extract and execute page-specific script files (excluding globally persistent ones)
     const newScripts = newDoc.querySelectorAll('script');
