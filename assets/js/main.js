@@ -1,10 +1,15 @@
 // Premium SPA Transition Engine for Zero-Flash, Buttery-Smooth Page Changes
+let activeTransitionId = 0;
+
 async function navigateToPage(url, pushState = true) {
   const pageContainer = document.getElementById('page-container');
   if (!pageContainer) {
     window.location.href = url;
     return;
   }
+
+  // Increment the active transition ID to track rapid clicks
+  const currentTransitionId = ++activeTransitionId;
 
   // 1. Trigger exit animation
   pageContainer.classList.add('fade-out');
@@ -14,6 +19,9 @@ async function navigateToPage(url, pushState = true) {
     const response = await fetch(url);
     if (!response.ok) throw new Error('Failed to fetch page');
     const htmlText = await response.text();
+
+    // Abort if a newer page transition has been triggered in the meantime
+    if (currentTransitionId !== activeTransitionId) return;
 
     // Parse the new page
     const parser = new DOMParser();
@@ -27,6 +35,9 @@ async function navigateToPage(url, pushState = true) {
 
     // Wait for the exit animation to finish (220ms)
     await new Promise(resolve => setTimeout(resolve, 220));
+
+    // Abort if a newer page transition has been triggered in the meantime
+    if (currentTransitionId !== activeTransitionId) return;
 
     // 3. Update history state first (so custom elements evaluate the new URL pathname correctly)
     if (pushState) {
