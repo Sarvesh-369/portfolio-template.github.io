@@ -11,7 +11,7 @@ Unlike traditional purely academic portals, this template is meticulously design
 - **Dual CV & Resume Setup**: High-level action buttons on the homepage for both an industry-focused **Resume** and an academic-focused **Curriculum Vitae (CV)**.
 - **Categorized Experience**: A single cohesive `Experience` page with sub-sections for **Professional & Research Experiences** and **Teaching & Mentorship**, ensuring academic and corporate roles do not clutter your menu.
 - **Split Project Layout**: The `Projects` page is cleanly organized into two distinct sections: **Research Projects** (focusing on methodology, literature, models) and **Industry Projects** (focusing on code execution, architecture, and impact).
-- **Modern Tech Skills & Research Competencies**: A redesigned `Skills` page grouping languages, deep learning frameworks, dev tools/infra (Docker, AWS, Git), and research/writing tools (LaTeX, Jupyter) side-by-side.
+
 - **Academic Publication Port**: An elegant publications tracker, crucial for RA roles and standard R&D research positions, with seamless formatting.
 - **Clean Profile Sidebar**: An ultra-clean left sidebar focusing on key high-signal links (Email, LinkedIn, GitHub, Scholar, ORCID, Twitter).
 
@@ -22,7 +22,7 @@ Unlike traditional purely academic portals, this template is meticulously design
 - **Home**: Welcome introduction, news feeds (highlighting research and industry highlights alike), and dual CV & Resume buttons.
 - **Education**: Detailed layout of academic qualifications, courses, and GPAs.
 - **Experience**: Detailed professional work history, academic/GRA/GTA roles, and teaching assistantships.
-- **Skills**: Balanced list of coding languages, ML frameworks, developer tools, and academic tools.
+
 - **Projects**: Cohesive dual-section layout for Research Projects and Industry/Open-Source Projects.
 - **Publications**: Seamless publication tracking for academic citations and research papers.
 - **Blogs**: Space to write technical reviews and academic discussions.
@@ -35,8 +35,8 @@ Unlike traditional purely academic portals, this template is meticulously design
 > ### Projects
 > <img src="./assets/img/screenshots/projects.png" width="1000"> 
 
-> ### Skills, Education
-> <img src="./assets/img/screenshots/Skills.png" width="380"><span style="margin-left:15px"><img src="./assets/img/screenshots/Education.png" width="380"> 
+> ### Education
+> <img src="./assets/img/screenshots/Education.png" width="1000"> 
 
 > ### Blogposts, Publications
 > <img src="./assets/img/screenshots/Blogs.png" width="380"><span style="margin-left:15px"><img src="./assets/img/screenshots/Publications.png" width="380"> 
