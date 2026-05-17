@@ -27,6 +27,20 @@ Unlike traditional purely academic portals, this template is meticulously design
 - **Publications**: Seamless publication tracking for academic citations and research papers.
 - **Blogs**: Space to write technical reviews and academic discussions.
 
+
+## Screenshots
+> ### Homepage
+> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Homepage.PNG" width="1000"> 
+
+> ### Projects
+> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/projects.PNG" width="1000"> 
+
+> ### Skills, Education
+> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Skills.PNG" width="380"><span style="margin-left:15px"><img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Education.PNG" width="380"> 
+
+> ### Blogposts, Publications
+> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Blogs.PNG" width="380"><span style="margin-left:15px"><img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Publications.PNG" width="380"> 
+
 ---
 
 ## Getting Started
