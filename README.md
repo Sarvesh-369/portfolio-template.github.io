@@ -62,7 +62,42 @@ Unlike traditional purely academic portals, this template is meticulously design
 
 ## Customization
 
-To customize the portfolio, edit the HTML files in the `pages` directory and the CSS files in `assets/css`. 
+To customize the portfolio, edit the HTML files in the `pages` directory and the CSS files in `assets/css`.
 
-- Place your actual Resume PDF in `assets/resume.pdf` and your CV PDF in `assets/cv.pdf` to activate the download buttons.
-- Modify paths, social handles, and academic links directly in the HTML template structures.
+### Document Storage & Management Guide
+
+A dedicated, organized document structure is located inside `assets/documents/`. Save all your PDF files using the following paths to keep the repository clean and maintainable:
+
+| Document Type | Local Folder / File Name | HTML Link Path |
+| :--- | :--- | :--- |
+| **Industry Resume** | `assets/documents/resume.pdf` | Already linked on **Home** (`./assets/documents/resume.pdf`) |
+| **Academic CV** | `assets/documents/cv.pdf` | Already linked on **Home** (`./assets/documents/cv.pdf`) |
+| **Research Papers / Preprints** | `assets/documents/publications/paper_name.pdf` | Link from **Publications** (`../assets/documents/publications/paper_name.pdf`) |
+| **Project Reports / Slides** | `assets/documents/projects/project_name.pdf` | Link from **Projects** (`../assets/documents/projects/project_name.pdf`) |
+
+---
+
+### How to Link Your Documents in HTML:
+
+#### 1. Linking a Research Paper PDF in `pages/publications.html`
+1. Save your research paper PDF as `assets/documents/publications/my_paper.pdf`.
+2. Open `pages/publications.html` in your editor, locate the relevant publication, find the **PDF** button, and update the link `href` like this:
+   ```html
+   <button type="button" class="btn btn-blue btn-sm">
+       <a href="../assets/documents/publications/my_paper.pdf" target="_blank">
+           PDF <i class="ml-1 fa-regular fa-file-pdf"></i>
+       </a>
+   </button>
+   ```
+
+#### 2. Linking a Project Report/Slides PDF in `pages/projects.html`
+1. Save your project writeup/report PDF as `assets/documents/projects/my_project.pdf`.
+2. Open `pages/projects.html` in your editor, locate the relevant project, find the **PDF** button, and update the link `href` like this:
+   ```html
+   <button type="button" class="ml-2 btn btn-blue btn-sm py-0">
+       <a href="../assets/documents/projects/my_project.pdf" target="_blank">
+           PDF <i class="ml-1 fa-regular fa-file-pdf"></i>
+       </a>
+   </button>
+   ```
+
