@@ -33,7 +33,7 @@ Unlike traditional purely academic portals, this template is meticulously design
 > <img src="./assets/img/screenshots/Homepage.png" width="1000"> 
 
 > ### Projects
-> <img src="./assets/img/screenshots/projects.png" width="1000"> 
+> <img src="./assets/img/screenshots/Projects.png" width="1000"> 
 
 > ### Education
 > <img src="./assets/img/screenshots/Education.png" width="1000"> 
